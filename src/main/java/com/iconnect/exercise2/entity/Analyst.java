@@ -15,24 +15,24 @@ public class Analyst {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-Long id;
+private Long id;
 
-String roleUser;
-Long authorSequenceNumber;
-Long phoneNumber;
-String email;
-String dn;
-String jobTitle;
-String active;
-String fullName;
-String userName;
-String firstName;
-String lastName;
-String signature;
-String commonGroups;
+private String roleUser;
+private Long authorSequenceNumber;
+private Long phoneNumber;
+private String email;
+private String dn;
+private String jobTitle;
+private String active;
+private String fullName;
+private String userName;
+private String firstName;
+private String lastName;
+private String signature;
+private String commonGroups;
 
 @ManyToOne(cascade = {CascadeType.ALL})
-OrgStructure orgStructure;
+private OrgStructure orgStructure;
 
 public Long getId() {
 	return id;

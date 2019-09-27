@@ -10,11 +10,11 @@ public class OrgStructure {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-Long orgStructureId;
-String divisionCode;
-String divisionName;
-String sectionCode;
-String sectionName;
+private Long orgStructureId;
+private String divisionCode;
+private String divisionName;
+private String sectionCode;
+private String sectionName;
 public Long getOrgStructureId() {
 	return orgStructureId;
 }
